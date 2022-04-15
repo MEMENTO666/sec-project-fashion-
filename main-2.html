@@ -5,12 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>main-2</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <style>
       *{margin:0; padding:0; box-sizing: border-box;}
     .container {
       width:100vw;
       height:100vh;
-      /* display: flex; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       
     }
     .header {
@@ -19,33 +22,68 @@
       background-color: gray;
     }
 
+    li {list-style: none; line-height: 30px;
+        display: flex;
+        align-items: center;
+    }
     .box {
-      width:100vw;
-      height:70vh;
-      border: 1px solid black;
+      width:700px;
+      height:680px;
+      /* border: 1px solid black; */
       margin-top: 5px;
       flex-wrap: wrap;
       display: flex;
       justify-content:center;
+      /* background-color:rgb(20, 40, 107); ; */
     }
     .box div {
-      width:40vw;
-      height:20vh;
-      border: 1px solid rgb(153, 78, 78);
+      width:300px;
+      height:200px;
+      /* border: 1px solid black; */
       margin-top: 15px;
       font-size: 15px;
+
+    }
+    h3 {color:rgb(20, 40, 107); ;}
+    
+    .box div:nth-child(1) {
+      background-image: url(./no2.png);
+      background-size:cover;
       
     }
+    .box div:nth-child(4) {
+      background-image: url(./no3.png);
+      background-size:cover;
+      
+    }
+    .box div:nth-child(5) {
+      background-image: url(./no4.png);
+      background-size:cover; }
     
     
     .footer {
       width:100vw;
-      height:15vh;
-      background-color: gray;
+      height:11vh;
+      /* background-color: gray; */
       position: absolute;
       height:15vh;
       bottom:0;
-      
+      /* background-image: url(./navy2.png); */
+      background-size:cover;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .footer div {
+      width:200px;
+      height:100%;
+
+
+    }
+    
+    .footer div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     
@@ -81,7 +119,23 @@
               제작할 수 있습니다.
               </div>
     </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div>
+              <span class="iconify" data-icon="simple-icons:v" style="color: rgb(20, 40, 107); font-size: 50px;"></span>
+            </div>
+            <div>
+              <li><span style=font-weight:bold; color:rgb(20,40,107);>HOME<span></li>
+              <li>ABOUT US</li>
+              <li>CONTACT</li>
+              <li>NEWS</li>
+            </div>
+            <div>
+              <li><span style=font-weight:bold; color:rgb(20,40,107);><span>COMMUNITY</span></li>
+              <li>SUPPORT</li>
+              <li>PRIMARY NOTICE</li>
+            </div>
+            
+        </div>
   </div>
 </body>
 </html>

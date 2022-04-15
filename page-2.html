@@ -23,14 +23,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: gray;
+      background-color: rgb(199, 209, 209);
       font-size: 35px;
+      color: rgb(20, 40, 107); 
+      
     }
    
+    h1 {text-shadow: 3px 3px 3px  rgb(206, 196, 60); }
+    
     .box {
-      width:90vw;
+      width:100vw;
       height:100vh;
       /* border: 1px solid black; */
+      background-color: rgb(199, 209, 209);
     }
 
     .img {
@@ -41,13 +46,41 @@
       /* border: 1px solid black; */
       margin-top: 20px;
     }
-      
     .img div {
-      width:250px;
+      width:400px;
       height:210px;
       background-color: red;
     }
+    .img div:nth-child(1) {
+      background-size: cover;
+      background-image: url(./1.png);}
+    .img div:nth-child(2) {
+      background-size: cover;
+      background-image: url(./3.png);}
+    
+    .img2 {
+      width:90vw;
+      height:23vh;
+      display: flex;
+      justify-content: space-evenly;
+      /* border: 1px solid black; */
+      margin-top: 20px;
+    }
       
+    
+    
+    .img2 div {
+      width:400px;
+      height:210px;
+      background-color: red;
+    }
+    .img2 div:nth-child(1) {
+      background-size: cover;
+      background-image: url(./4.png);}
+    .img2 div:nth-child(2) {
+      background-size: cover;
+      background-image: url(./5.png);}
+    
     .text {
       width:90vw;
       height:13vh;
@@ -56,7 +89,7 @@
       justify-content: space-evenly;
     }
     .text div {
-      width:250px;
+      width:400px;
       height:120px;
       /* background-color: aqua; */
       
@@ -75,22 +108,22 @@
       </div>
       <div class="text">
         <div>
-          <h3>Intuitive User Experience</h3>
-          <p>동작인식을 통한 직관적이고 편리한 아이템 검색</p>
+          <h3>Instant Body Recognition</h3>
+          <p>정확한 자동 사이즈 측정</p>
         </div>
         <div>
-          <h3>Convenient Mix and Match</h3>
-          <p>겹옷 처리를 통한 다양한 스타일 매치</p>
+          <h3>Responsive 3D Virtual Fitting</h3>
+          <p>사용자의 움직임에 즉각적으로 반응하는 3D가상피팅</p>
         </div>
       </div>
-      <div class="img">
+      <div class="img2">
         <div></div>
         <div></div>
       </div>
       <div class="text">
         <div>
-          <h3>Physics-based fitting simulation</h3>
-          <p>물리기반 3D 피팅 시뮬레이션으로 360도 회전</p>
+          <h3>Instant Hair Transformation</h3>
+          <p>다양한 헤어스타일의 변화로 바로 새로운 스타일링 가능</p>
         </div>
         <div>
           <h3>Easy Access to Purchase Essentials</h3>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page-3</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <style>
+      *{margin:0; padding:0; box-sizing: border-box;}
+      .container {
+      width:100vw;
+      height:100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+
+      .header {
+      width:100vw;
+      height:6vh;
+      /* background-color: red; */
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 3px 3px 3px 3px;
+    }
+
+    .header div {
+      width:50vw;
+      height:6vh;
+      background-color: white;
+      box-shadow: 0px 2px 2px 2px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: 600;
+      color: rgb(20, 40, 107); ;
+    }
+    .header div:nth-child(1) {
+      width:10vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    
+    li {list-style: none; display: inline; 
+        cursor: pointer;
+    }
+    
+    .bar {
+      width:100vw;
+      height:6vh;
+      background-color: rgb(20, 40, 107);
+      box-shadow: 2px 2px 2px 2px; color: rgb(255, 255, 0); }
+
+      .text {
+        width:100vw;
+        height:22vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 60px;
+        font-size: 20px;
+        background-color: rgba(182, 197, 186, 0.3);
+        backdrop-filter: blur(70px);
+      }
+      h2 {font-size: 40px; font-family: impact; letter-spacing: 15px;}
+
+      .img {
+        width:100vw;
+        height:30vh;
+        /* background-color: gray; */
+        display: flex;
+      }
+
+      .img div {
+        width:50%;
+        height:100%;
+        /* border:1px solid black; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        justify-content: center;
+
+      }
+      .left {
+        background-image: url(./picture.png);
+        background-size: cover;
+      }
+      .right div {
+        width:120px;
+        height:100%;
+        margin:5px;
+        background-color: darkgray;
+      }
+
+      .right div:nth-child(1) {
+        background-image:url(./1.png);
+        background-size:cover;
+      }
+      .right div:nth-child(2) {
+        background-image:url(./2.png);
+        background-size:cover;
+      }
+      .right div:nth-child(3) {
+        background-image:url(./3.png);
+        background-size:cover;
+      }
+      .right div:nth-child(4) {
+        background-image:url(./4.png);
+        background-size:cover;
+      }
+
+      .kidstext {
+        width:100%;
+        height:8vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .kids {
+        width:100vw;
+        height:28vh;
+        /* background-color: gray; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .kids div {
+        width:250px;
+        height:220px;
+      }  
+      
+      .kids div:nth-child(1) {
+        background-image:url(./01.png) ;
+        background-size: cover;
+      }
+      .kids div:nth-child(2) {
+        background-image:url(./02.png) ;
+        background-size: cover;
+      }  
+      .kids div:nth-child(3) {
+        background-image:url(./03.png) ;
+        background-size: cover;
+      }
+      .kids div:nth-child(4) {
+        background-image:url(./04.png) ;
+        background-size: cover;
+      }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div><span class="iconify" data-icon="simple-icons:v" style="color: rgb(20, 40, 107); font-size: 50px;"></span></div>
+      <div class="menu">
+        <li>FEATURES</li>
+        <li>SHOP</li>
+        <li>ABOUT US</li>
+        <li>CONTACT</li>
+      </div>
+    </div>
+      <div class="bar"></div>
+      <div class="text">
+        <h2>CLOTH AUTHORING TOOL</h2>
+        <p>의상의 앞,뒤 사진을 기반으로, 3D데이터 베이스 제작 및 관리 소프트웨어를 통해<br>한벌당 5~10분 내외로 제작할 수 있습니다.</p>
+      </div>
+      
+      <div class="img">
+        <div class="left"></div>
+        <div class="right">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+        <div class="kidstext">
+          <h2>FOR KIDS</h2>
+        </div>
+      <div class="kids">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      
+      
+
+      </div>
+</body>
+</html>

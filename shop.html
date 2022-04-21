@@ -10,10 +10,11 @@
      *{margin:0; padding:0;  box-sizing: border-box;}
     .container {
       width:100vw;
-      height:200vh;
+      height:300vh;
       display: flex;
       flex-direction: column;
       align-items: center;}
+      
       .header {
       width:100vw;
       height:6vh;
@@ -21,6 +22,8 @@
       display: flex;
       justify-content: space-between;
       box-shadow: 3px 3px 3px 3px;
+      position: sticky;
+      top:0;
     }
     .header div {
       width:50vw;
@@ -31,7 +34,10 @@
       justify-content: space-around;
       align-items: center;
       font-weight: 600;
-      color: rgb(20, 40, 107); ;
+      color: rgb(20, 40, 107); 
+      position: sticky;
+      top:0;
+
     }
     .header div:nth-child(1) {
       width:10vw;
@@ -39,6 +45,9 @@
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      position: sticky;
+      top:0;
+
     }
     li {list-style: none; display: inline; 
         cursor: pointer;
@@ -48,12 +57,15 @@
       height:6vh;
       background-color: rgb(20, 40, 107);
       box-shadow: 2px 2px 2px 2px; color: rgb(255, 255, 0);
+      position: sticky;
+      top:55px;
     }
+    
     
     .top {
       width:100vw;
       height:25vh;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -62,14 +74,14 @@
     .top2 {
       width:100vw;
       height:50vh;
-      border: 1px solid black;
+      /* border: 1px solid black; */
       display: flex;
       flex-direction: column;
     }
     .top2 div:nth-child(1) {
       width:100vw;
       height:45vh;
-      background-color: red;
+      background-color: gray;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -84,8 +96,80 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      
     }
+    
+    .mid {
+      width:100vw;
+      height:40vh;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .mid div {
+      width:260px;
+      height:320px;
+      background-color: white;
+    }
+    .midtext {
+      width:100vw;
+      height:12vh;
+      /* border: 1px solid black; */
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    
+    .midtext div {
+      width:260px;
+      height:100px;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .img {
+      width:100vw;
+      height:26vh;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .bottomtext {
+      width:100vw;
+      height:20vh;
+      background-color: darkgray;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bottomImg {
+      width:85vw;
+      height:30vh;
+      background-color: gray;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .bottomImg div:nth-child(1) {
+      width:50vw;
+      height:30vh;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .bottomImg div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
     
   
   </style>
@@ -104,19 +188,34 @@
       </div>
     </div>
       <div class="bar"></div>
-      <div class="top"></div>
+      <div class="top">
+        <h1>THE Latest Styles<br>at Your Finger Tips 뒤에 이미지</h1>
+      </div>
       <div class="top2">
         <div>
-          <div>IMG</div>
-          <div>IMG</div>
+          <div>IMG (인터랙션 주고싶당)</div>
+          <div>IMG (너도 주고싶당)</div>
         </div>
         <div>TEXT</div>
       </div>
-
-    
-    
-    
-      
+      <div class="mid">
+        <div>소개 이미지</div>
+        <div>소개 이미지</div>
+        <div>cow dog 이미지</div>
+      </div>
+      <div class="midtext">
+        <div>TEXT</div>
+        <div>TEXT</div>
+        <div>TEXT</div>
+      </div>
+      <div class="img">모바일 만지고 있는 이미지</div>
+      <div class="bottomtext">
+        <h1>How It Works</h1>
+      </div>
+      <div class="bottomImg">
+        <div>어케 작동하는지에 대한 이미지</div>
+        <div>어케 작동 이미지</div>
+      </div>
       
       
       

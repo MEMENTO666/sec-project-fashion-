@@ -8,12 +8,16 @@
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
   <style>
      *{margin:0; padding:0;  box-sizing: border-box;}
+     body {
+       overflow-x: hidden;
+     }
     .container {
       width:100vw;
-      height:300vh;
+      height:280vh;
       display: flex;
       flex-direction: column;
-      align-items: center;}
+      align-items: center;
+    }
       
       .header {
       width:100vw;
@@ -34,7 +38,7 @@
       justify-content: space-around;
       align-items: center;
       font-weight: 600;
-      color: rgb(20, 40, 107); 
+      color: rgb(12, 96, 117); 
       position: sticky;
       top:0;
 
@@ -55,8 +59,10 @@
     .bar {
       width:100vw;
       height:6vh;
-      background-color: rgb(20, 40, 107);
-      box-shadow: 2px 2px 2px 2px; color: rgb(255, 255, 0);
+      /* background-color: rgb(20, 40, 107); */
+      background-color: rgb(12, 96, 117);
+
+      box-shadow: 2px 2px 2px 2px; color: rgb(177, 177, 67);
       position: sticky;
       top:55px;
     }
@@ -69,6 +75,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
+      letter-spacing: 2px;
+      line-height: 47px;
+      font-size: 22px;
+      background-image: url(./top-image.png);
+      color: rgb(255, 255, 255);
+      background-size: cover;
+      font-weight: bold;
     }
     
     .top2 {
@@ -81,21 +95,29 @@
     .top2 div:nth-child(1) {
       width:100vw;
       height:45vh;
-      background-color: gray;
+      /* background-color: gray; */
       display: flex;
       align-items: center;
       justify-content: space-evenly;
+      
     }
 
     .top2 div:nth-child(1) div {
       width:320px;
       height:400px;
       background-color: white;
+      background-image: url(./top2-image\(1\).png);
     }
+    .top2 div:nth-child(1) div:nth-child(2)  {
+      background-image: url(./top2-image\(2\).png);
+    }
+    
     .top2 div:nth-child(2)  {
       display: flex;
       align-items: center;
       justify-content: center;
+      color: rgba(100, 207, 207, 0.788);
+
     }
     
     .mid {
@@ -137,15 +159,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      background-image: url(./img-image.png);
+      background-size: cover;
     }
     
     .bottomtext {
       width:100vw;
-      height:20vh;
-      background-color: darkgray;
+      height:15vh;
+      /* background-color: darkgray; */
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 25px;
     }
     .bottomImg {
       width:85vw;
@@ -169,7 +194,42 @@
       align-items: center;
       justify-content: center;
     }
+    .bottomtext2 {
+      width:80vw;
+      height:40vh;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
     
+    .bottomtext2 div {
+      width:60vw;
+      height:12vh;
+      background-color: gray;
+    }
+    .footer {
+      width:100vw;
+      height:10vh;
+      background-color: rgb(20, 20, 20);
+      position: absolute;
+      top:280%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .footer div {
+      width:70px;
+      height:70px;
+      background-color: white;
+      margin:10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 40px;
+    }
     
   
   </style>
@@ -179,7 +239,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <div><span class="iconify" data-icon="simple-icons:v" style="color: rgb(20, 40, 107); font-size: 50px;"></span></div>
+      <div><span class="iconify" data-icon="simple-icons:v" style="color: rgb(12, 96, 117);  font-size: 50px;"></span></div>
       <div class="menu">
         <li>FEATURES</li>
         <li>SHOP</li>
@@ -189,14 +249,18 @@
     </div>
       <div class="bar"></div>
       <div class="top">
-        <h1>THE Latest Styles<br>at Your Finger Tips 뒤에 이미지</h1>
+        <h1>The Latest Styles<br>at Your Finger Tips </h1>
+       <br> <p>직관적이고 편리한 아이템 착장</p>
       </div>
       <div class="top2">
         <div>
-          <div>IMG (인터랙션 주고싶당)</div>
-          <div>IMG (너도 주고싶당)</div>
+          <div></div>
+          <div></div>
         </div>
-        <div>TEXT</div>
+        <div>
+          <h2><span style=font-size:30px;> Virtual fitting. Online , Offline</h2></span>
+          
+        </div>
       </div>
       <div class="mid">
         <div>소개 이미지</div>
@@ -208,7 +272,7 @@
         <div>TEXT</div>
         <div>TEXT</div>
       </div>
-      <div class="img">모바일 만지고 있는 이미지</div>
+      <div class="img"></div>
       <div class="bottomtext">
         <h1>How It Works</h1>
       </div>
@@ -216,8 +280,27 @@
         <div>어케 작동하는지에 대한 이미지</div>
         <div>어케 작동 이미지</div>
       </div>
-      
-      
+      <div class="bottomtext2">
+        <div>
+          <h2>FIT</h2>
+          <p>포즈를 취해 주세요.</p>
+        </div>
+        <div>
+          <h2>STYLE</h2>
+          <p>생선된 QR코드를 캡쳐하여 포즈 데이터를 전송하세요</p><br>
+          <p>온라인, 모바일 상의 다양한 브랜드의 의상들을 편리하게 가상 피팅 해 볼 수 있습니다.</p>
+        </div>
+        <div>
+          <h2>SHOP</h2>
+          <p>원하는 아이템을 선택하여 간편하게 결제하세요.</p>
+        </div>
+      </div>
+    
+      <div class="footer">
+        <div><span class="iconify" data-icon="ant-design:youtube-filled" style="font-size: 50px;"></span></div>
+        <div><span class="iconify" data-icon="akar-icons:instagram-fill" style="font-size: 50px;"></span></div>
+        <div><span class="iconify" data-icon="bi:facebook" style="font-size: 50px;"></span></div>
+    </div>
       
       
       

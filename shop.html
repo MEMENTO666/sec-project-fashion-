@@ -28,6 +28,7 @@
       box-shadow: 3px 3px 3px 3px;
       position: sticky;
       top:0;
+      background-color: white;
     }
     .header div {
       width:50vw;
@@ -38,7 +39,7 @@
       justify-content: space-around;
       align-items: center;
       font-weight: 600;
-      color: rgb(12, 96, 117); 
+      color: #011E24;
       position: sticky;
       top:0;
 
@@ -59,19 +60,15 @@
     .bar {
       width:100vw;
       height:6vh;
-      /* background-color: rgb(20, 40, 107); */
-      background-color: rgb(12, 96, 117);
-
-      box-shadow: 2px 2px 2px 2px; color: rgb(177, 177, 67);
+      background-color: #011E24;
+      box-shadow: 2px 2px 2px 2px; color: #FA5DAC;
       position: sticky;
       top:55px;
     }
     
-    
     .top {
       width:100vw;
       height:25vh;
-      /* border: 1px solid black; */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -79,7 +76,7 @@
       letter-spacing: 2px;
       line-height: 47px;
       font-size: 22px;
-      background-image: url(./top-image.png);
+      background-image: url(./0.png);
       color: rgb(255, 255, 255);
       background-size: cover;
       font-weight: bold;
@@ -88,18 +85,15 @@
     .top2 {
       width:100vw;
       height:50vh;
-      /* border: 1px solid black; */
       display: flex;
       flex-direction: column;
     }
     .top2 div:nth-child(1) {
       width:100vw;
       height:45vh;
-      /* background-color: gray; */
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      
     }
 
     .top2 div:nth-child(1) div {
@@ -116,14 +110,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: rgba(100, 207, 207, 0.788);
+      color: #011E24;
 
     }
     
     .mid {
       width:100vw;
       height:40vh;
-      background-color: gray;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -133,6 +126,15 @@
       width:260px;
       height:320px;
       background-color: white;
+    }
+    .mid div:nth-child(1) {
+      background-image: url(./shop-mid\(1\).png);
+    }
+    .mid div:nth-child(2) {
+      background-image: url(./shop-mid\(2\).png);
+    }
+    .mid div:nth-child(3) {
+      background-image: url(./shop-mid\(3\).png);
     }
     .midtext {
       width:100vw;
@@ -146,10 +148,12 @@
     .midtext div {
       width:260px;
       height:100px;
-      background-color: gray;
+      background-color: #011E24;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
+      color:white;
     }
     
     .img {
@@ -197,7 +201,6 @@
     .bottomtext2 {
       width:80vw;
       height:40vh;
-      border: 1px solid black;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -239,7 +242,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <div><span class="iconify" data-icon="simple-icons:v" style="color: rgb(12, 96, 117);  font-size: 50px;"></span></div>
+      <div><span class="iconify" data-icon="simple-icons:v" style="color: #011E24;  font-size: 50px;"></span></div>
       <div class="menu">
         <li>FEATURES</li>
         <li>SHOP</li>
@@ -249,7 +252,7 @@
     </div>
       <div class="bar"></div>
       <div class="top">
-        <h1>The Latest Styles<br>at Your Finger Tips </h1>
+        <h1>The Latest Styles at<br> Your Fingertips </h1>
        <br> <p>직관적이고 편리한 아이템 착장</p>
       </div>
       <div class="top2">
@@ -263,14 +266,16 @@
         </div>
       </div>
       <div class="mid">
-        <div>소개 이미지</div>
-        <div>소개 이미지</div>
-        <div>cow dog 이미지</div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
       <div class="midtext">
-        <div>TEXT</div>
-        <div>TEXT</div>
-        <div>TEXT</div>
+        <div>다양한 브랜드로부터 <br>
+             다양한 아이템들을 동시에<br> 믹스매치
+        </div>
+        <div>전체 의상 확대 및 <br>회전가능</div>
+        <div>편리한 구매를 위한 <br> 온라인 샵과의 연계</div>
       </div>
       <div class="img"></div>
       <div class="bottomtext">
@@ -287,7 +292,7 @@
         </div>
         <div>
           <h2>STYLE</h2>
-          <p>생선된 QR코드를 캡쳐하여 포즈 데이터를 전송하세요</p><br>
+          <p>생성된 QR코드를 캡쳐하여 포즈 데이터를 전송하세요</p><br>
           <p>온라인, 모바일 상의 다양한 브랜드의 의상들을 편리하게 가상 피팅 해 볼 수 있습니다.</p>
         </div>
         <div>

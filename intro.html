@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>intro</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <style>
+    *{margin:0; padding:0; box-sizing: border-box;}
+    .container {
+      width:100vw;
+      height:100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:#011E24 ;
+      flex-direction: column;
+    }
+
+    .logo {
+      width: 70vw;
+      height:30vh;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .logo div:nth-child(1) {
+      width:35vw;
+      height:25vh;
+      /* border: 1px solid white; */
+      position: relative;
+      display: flex;
+      justify-content: center;
+      left:10px;
+      top:10px;
+      opacity: 0.6;
+      z-index: 2;
+    }
+    .logo div:nth-child(2) {
+      width:35vw;
+      height:25vh;
+      /* border: 1px solid white; */
+      justify-content: center;
+      display: flex;
+      position: absolute;
+    }
+    
+    
+    .brand {
+      width:70vw;
+      height:20vw;
+      /* border: 1px solid white; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 50px;
+      letter-spacing: 12px;
+    }
+    
+  </style>
+  
+  
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+        <div><span class="iconify" data-icon="simple-icons:v" style="color: #77fff7; font-size: 200px;"></span></div>
+        <div><span class="iconify" data-icon="simple-icons:v" style="color: #fa5dac; font-size: 200px;" ></span></div>
+    </div>
+    <div class="brand">
+      <h1>Vir-Fit</h1>
+    </div>
+    
+    
+  </div>
+</body>
+</html>

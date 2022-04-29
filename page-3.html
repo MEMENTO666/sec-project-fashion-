@@ -17,42 +17,52 @@
 
       .header {
       width:100vw;
-      height:6vh;
+      height:6.5vh;
       /* background-color: red; */
       display: flex;
       justify-content: space-between;
-      box-shadow: 3px 3px 3px 3px;
+      background-color: #011E24;
     }
 
     .header div {
       width:50vw;
       height:6vh;
-      background-color: white;
-      box-shadow: 0px 2px 2px 2px;
+      /* box-shadow: 0px 2px 2px 2px; */
       display: flex;
       justify-content: space-around;
       align-items: center;
       font-weight: 600;
-      color: #011E24;
+      color: white;
       
     }
     .header div:nth-child(1) {
-      width:10vw;
+      width:60px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      position: absolute;
     }
-    
+    .header div:nth-child(2) {
+      width:60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      position: relative;
+      top:6px;
+      left:8px;
+      opacity: 0.6;
+    }
     li {list-style: none; display: inline; 
         cursor: pointer;
     }
     
     .bar {
       width:100vw;
-      height:6vh;
+      height:1vh;
       background-color: #011E24; 
-      box-shadow: 2px 2px 2px 2px; color: #FA5DAC; }
+      box-shadow: 2px 2px 2px 0px; color: #FA5DAC; }
 
       .text {
         width:100vw;
@@ -63,7 +73,7 @@
         justify-content: center;
         line-height: 60px;
         font-size: 20px;
-        background-color: rgba(182, 197, 186, 0.3);
+        /* background-color: rgba(182, 197, 186, 0.3); */
         backdrop-filter: blur(70px);
       }
       h2 {font-size: 40px; font-family: impact; letter-spacing: 15px;}
@@ -157,7 +167,9 @@
 <body>
   <div class="container">
     <div class="header">
-      <div><span class="iconify" data-icon="simple-icons:v" style="color: #011E24; font-size: 50px;"></span></div>
+      <div><span class="iconify" data-icon="simple-icons:v" style="color: #fa5dac; font-size: 50px;"></span></div>
+      <div><span class="iconify" data-icon="simple-icons:v" style="color: #77fff7; font-size: 50px;"></span></div>
+      <div></div>
       <div class="menu">
         <li>FEATURES</li>
         <li>SHOP</li>

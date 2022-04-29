@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>log-in</title>
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+  <style>
+    *{margin:0; padding:0; box-sizing: border-box;}
+    .container {
+      width: 100vw;
+      height:100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #011E24;
+    }
+    .logo {
+      width: 50vw;
+      height:30vh;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo div:nth-child(1) {
+      width: 50vw;
+      height:30vh;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      top:10px;
+      left: 10px;
+      z-index: 2;
+      opacity: 0.6;
+    }
+    
+    .logo div:nth-child(2) {
+      width: 50vw;
+      height:30vh;
+      /* border: 1px solid white; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+    }
+    .welcome {
+      width:70vw;
+      height:12vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+    }
+    .id {
+      width:60vw;
+      height:10vh;
+      background-color: #fa5dac;
+      border-radius: 50px;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    .id div:nth-child(1) {
+      width:10vw;
+      height:10vh;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .id div:nth-child(2) {
+      width:40vw;
+      height:10vh;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 35px;
+      color: white;
+      letter-spacing: 4px;
+    }
+
+    .pass {
+      width:60vw;
+      height:10vh;
+      background-color: #fa5dac;
+      /* border: 1px solid white; */
+      border-radius: 50px;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 30px;
+    }
+    
+    .pass div:nth-child(1) {
+      width:10vw;
+      height:10vh;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .pass div:nth-child(2) {
+      width:40vw;
+      height:10vh;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 35px;
+      color: white;
+      letter-spacing: 4px;
+    }
+    .circle {
+      width:55vw;
+      height:3vh;
+      /* background-color: #fa5dac; */
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .circle div {
+      width:8vw;
+      height:3vh;
+      background-color: white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 3px;
+    }
+    .circle div:nth-child(1) div  {
+      width:2.5vw;
+      height:2.5vh;
+      background-color: #fa5dac;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+    .login {
+      width:50vw;
+      height:10vh;
+      background-color: #fa5dac;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 30px;
+      color: white;
+      font-size: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+        <div>  <span class="iconify" data-icon="simple-icons:v" style="color: #77fff7; font-size: 200px;"></span></div>
+        <div>  <span class="iconify" data-icon="simple-icons:v" style="color: #fa5dac; font-size: 200px;"></span></div>
+    </div>
+    <div class="welcome">
+      <h1>Welcome Back</h1>
+    </div>
+    <div class="id">
+      <div><span class="iconify" data-icon="icon-park-outline:people" style="color: #f8f8f8; font-size: 70px;"></span></div>
+      <div>Email Adress</div>
+    </div>
+    <div class="pass">
+      <div><span class="iconify" data-icon="ri:lock-password-line" style="color: #f8f8f8; font-size: 70px;"></span></div>
+      <div>Password</div>
+    </div>
+    <div class="circle">
+      <div>
+          <div></div>
+      </div>
+    </div>
+    <div class="login">
+      Log in
+    </div>
+    
+    
+    
+    
+    
+  </div>
+</body>
+</html> 
+ <!-- <span class="iconify" data-icon="simple-icons:v" style="color: #fa5dac; font-size: 200px;"></span> -->
